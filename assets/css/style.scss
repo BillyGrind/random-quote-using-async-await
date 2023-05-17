@@ -1,0 +1,84 @@
+//Define Colors
+
+$Rouge: #8b2635;
+$lightGrey: #e0e2db;
+$MiddleGrey: #d2d4c8;
+$DarkGrey: #2e3532;
+$TeaGreen: #d3efbd;
+
+//Define Font
+
+body {
+  background-color: #d3efbd;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 700px;
+  width: 375px;
+  margin: 25px auto;
+  border-radius: 30px;
+  background-color: #d2d4c8;
+  // padding: 10px 20px;
+
+}
+
+.quote-title {
+  background-color: $Rouge;
+  color: $lightGrey;
+  // padding: 20px;
+  font-size: 25px;
+  border-radius: 15px;
+  // margin: 25px auto;
+  align-items: flex-start;
+  width: 375px;
+  height: 50px;
+  text-align: center;
+}
+
+.quote-image {
+  width: 300px;
+}
+
+.quote {
+  margin: 25px auto;
+  text-align: center;
+  width: 375px;
+  padding: 10px;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.quote-button {
+  background-color: $DarkGrey;
+  color: $lightGrey;
+  padding: 10px 20px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  &:hover {
+    transform: scale(1.3);
+  }
+  &:active {
+    background-color: #b5bd89;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(2px);
+  }
+}
